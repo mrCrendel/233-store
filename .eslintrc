@@ -72,7 +72,6 @@
     }],
     "semi": [2, "always"],
     "arrow-body-style": "warn",
-    "max-len": ["error", 120],
     "no-unused-expressions": 0,
     "no-unused-vars": ["warn"],
     "arrow-parens": ["error", "always"],

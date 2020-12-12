@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'mobx-react';
 import App from './containers/App';
 import store from './store';
+import './assets/styles/app.scss';
 
 ReactDOM.render(
   <React.StrictMode>
