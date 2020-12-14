@@ -15,9 +15,8 @@ const Header = () => (
           <a href="#link" className="header_main__link">Контакты</a>
         </div>
         <div className="header_main__shop_cart__wrapper">
-          {/* eslint-disable-next-line react/button-has-type */}
-          <button className="header_main__shop_cart">
-            <ShoppingCartIcon /> (0)
+          <button className="header_main__shop_cart" type="button">
+            <ShoppingCartIcon /> <span>(0)</span>
           </button>
         </div>
       </div>

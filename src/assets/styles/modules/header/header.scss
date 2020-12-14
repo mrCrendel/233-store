@@ -69,6 +69,9 @@
     }
 
     &__shop_cart {
+      display: flex;
+      position: relative;
+      align-items: center;
       cursor: pointer;
       border: none;
       background-color: $white-bright;
@@ -84,11 +87,19 @@
         background: -webkit-linear-gradient(90deg, #4099ff 3.07%, #73b4ff 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+
+        svg {
+          fill: $blue;
+        }
+
+        &:after {
+          opacity: 1;
+        }
       }
 
       &:after {
         content: "";
-        display: block;
+        position: absolute;
         height: 1px;
         width: 100%;
         background: $blue-gradient;
@@ -100,9 +111,12 @@
         transition: opacity .1s linear;
       }
 
-      &:hover:after {
-        opacity: 1;
+      span {
+        display: inline-block;
+        margin-left: 5px;
       }
+
+
     }
   }
 }
